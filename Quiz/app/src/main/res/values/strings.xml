@@ -1,0 +1,69 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Quiz</string>
+    <string name="question_1">Question 1:</string>
+    <string name="question_2">Question 2:</string>
+    <string name="question_3">Question 3:</string>
+    <string name="question_4">Question 4:</string>
+    <string name="question_5">Question 5:</string>
+    <string name="question_6">Question 6:</string>
+    <string name="question_7">Question 7:</string>
+    <string name="question_8">Question 8:</string>
+    <string name="question_9">Question 9:</string>
+    <string name="question_10">Question 10:</string>
+    <string name="question_1_content">What is the output of print list[1:3] if list = [ \'abcd\', 786 , 2.23, \'john\', 70.2 ]?</string>
+    <string name="question_2_content">Which of the following function convert an integer to an unicode character in python?</string>
+    <string name="question_3_content">What is the following function inserts an object at given index in a list?</string>
+    <string name="question_4_content">What is the output of the following program :\nprint "Hello World"[::-1]</string>
+    <string name="question_5_content">Which module in Python supports regular expressions?</string>
+    <string name="question_6_content">Which of the following is correct about Python?</string>
+    <string name="question_7_content">What is the output of the following program :</string>
+    <string name="question_7_cont">i = 0\nwhile i <![CDATA[<]]> 3:\n\t\tprint i\n\t\ti++\n\t\tprint i+1</string>
+    <string name="question_8_content">What will be the output of the following code :\nprint type(type(int))</string>
+    <string name="question_9_content">What is the output of the following code :</string>
+    <string name="question_9_cont">L = [\'a\',\'b\',\'c\',\'d\']\nprint "".join(L)</string>
+    <string name="question_10_content">What is the output of the following program :</string>
+    <string name="question_10_cont">y = 8\nz = lambda x : x * y\nprint z(6)</string>
+    <string name="q1_o1">[ \'abcd\', 786 , 2.23, \'john\', 70.2 ]</string>
+    <string name="q1_o2">abcd</string>
+    <string name="q1_o3">[786, 2.23]</string>
+    <string name="q1_o4">None of the above</string>
+    <string name="q2_o1">unichr(x)</string>
+    <string name="q2_o2">ord(x)</string>
+    <string name="q2_o3">hex(x)</string>
+    <string name="q2_o4">oct(x)</string>
+    <string name="q3_o1">list.index(obj)</string>
+    <string name="q3_o2">list.insert(index, obj)</string>
+    <string name="q3_o3">list.pop(obj=list[-1])</string>
+    <string name="q3_o4">list.remove(obj)</string>
+    <string name="q4_o1">dlroW olleH</string>
+    <string name="q4_o2">Hello Worl</string>
+    <string name="q4_o3">d</string>
+    <string name="q4_o4">Error</string>
+    <string name="q5_o1">regex</string>
+    <string name="q5_o2">pyregex</string>
+    <string name="q5_o3">re</string>
+    <string name="q5_o4">None of the above</string>
+    <string name="q6_o1">It supports automatic garbage collection</string>
+    <string name="q6_o2">It can be easily integrated with C, C++, COM, ActiveX, COBRA and Java</string>
+    <string name="q6_o3">Both of the above</string>
+    <string name="q6_o4">None of the above</string>
+    <string name="q7_o1">0 2 1 3 2 4</string>
+    <string name="q7_o2">0 1 2 3 4 5</string>
+    <string name="q7_o3">1 0 2 4 3 5</string>
+    <string name="q7_o4">Error</string>
+    <string name="q8_o1">type \'int\'</string>
+    <string name="q8_o2">type \'type\'</string>
+    <string name="q8_o3">Error</string>
+    <string name="q8_o4">0</string>
+    <string name="q9_o1">Error</string>
+    <string name="q9_o2">None</string>
+    <string name="q9_o3">abcd</string>
+    <string name="q9_o4">[\'a\', \'b\', \'c\', \'d\']</string>
+    <string name="q10_o1">48</string>
+    <string name="q10_o2">14</string>
+    <string name="q10_o3">64</string>
+    <string name="q10_o4">None of the above</string>
+    <string name="results">Your score is: <xliff:g id="name">%d</xliff:g>/10</string>
+    <string name="header">Quiz</string>
+    <string name="description">All questions can be attempted only once.</string>
+</resources>

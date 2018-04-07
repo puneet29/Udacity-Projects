@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fstimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/secimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fstimg"
+            android:scaleType="centerCrop"
+            android:scaleY="-1"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/thrdimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cards"
+            android:layout_below="@id/secimg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:id="@+id/cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/monoton"
+                android:text="@string/header"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/description"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/advent_pro_semibold"
+                    android:text="@string/question_1"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:text="@string/question_1_content" />
+
+                <RadioGroup
+                    android:id="@+id/q1rg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/q1r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick1"
+                        android:text="@string/q1_o1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q1r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick1"
+                        android:text="@string/q1_o2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/q1r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick1"
+                        android:text="@string/q1_o3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q1r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick1"
+                        android:text="@string/q1_o4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/advent_pro_semibold"
+                    android:text="@string/question_2"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:layout_margin="4dp"
+                    android:text="@string/question_2_content" />
+
+                <RadioGroup
+                    android:id="@+id/q2rg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/q2r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick2"
+                        android:text="@string/q2_o1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q2r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick2"
+                        android:text="@string/q1_o2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/q2r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick2"
+                        android:text="@string/q1_o3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q2r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick2"
+                        android:text="@string/q1_o4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/advent_pro_semibold"
+                    android:text="@string/question_3"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:text="@string/question_3_content" />
+
+                <RadioGroup
+                    android:id="@+id/q3rg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/q3r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick3"
+                        android:text="@string/q3_o1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q3r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick3"
+                        android:text="@string/q3_o2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/q3r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick3"
+                        android:text="@string/q3_o3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q3r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick3"
+                        android:text="@string/q3_o4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/advent_pro_semibold"
+                    android:text="@string/question_4"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:text="@string/question_4_content" />
+
+                <RadioGroup
+                    android:id="@+id/q4rg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/q4r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick4"
+                        android:text="@string/q4_o1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q4r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick4"
+                        android:text="@string/q4_o2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/q4r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick4"
+                        android:text="@string/q4_o3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q4r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick4"
+                        android:text="@string/q4_o4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/advent_pro_semibold"
+                    android:text="@string/question_5"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:text="@string/question_5_content" />
+
+                <RadioGroup
+                    android:id="@+id/q5rg5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/q5r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick5"
+                        android:text="@string/q5_o1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q5r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick5"
+                        android:text="@string/q5_o2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/q5r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick5"
+                        android:text="@string/q5_o3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q5r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick5"
+                        android:text="@string/q5_o4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/advent_pro_semibold"
+                    android:text="@string/question_6"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:text="@string/question_6_content" />
+
+                <RadioGroup
+                    android:id="@+id/q6rg6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/q6r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick6"
+                        android:text="@string/q6_o1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q6r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick6"
+                        android:text="@string/q6_o2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/q6r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick6"
+                        android:text="@string/q6_o3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q6r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick6"
+                        android:text="@string/q6_o4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/advent_pro_semibold"
+                    android:text="@string/question_7"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:text="@string/question_7_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/question_7_cont"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/q7rg7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/q7r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick7"
+                        android:text="@string/q7_o1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q7r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick7"
+                        android:text="@string/q7_o2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/q7r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick7"
+                        android:text="@string/q7_o3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q7r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick7"
+                        android:text="@string/q7_o4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/advent_pro_semibold"
+                    android:text="@string/question_8"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:text="@string/question_8_content" />
+
+                <RadioGroup
+                    android:id="@+id/q8rg8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/q8r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick8"
+                        android:text="@string/q8_o1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q8r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick8"
+                        android:text="@string/q8_o2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/q8r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick8"
+                        android:text="@string/q8_o3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q8r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick8"
+                        android:text="@string/q8_o4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/advent_pro_semibold"
+                    android:text="@string/question_9"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:text="@string/question_9_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/question_9_cont"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/q9rg9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/q9r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick9"
+                        android:text="@string/q9_o1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q9r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick9"
+                        android:text="@string/q9_o2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/q9r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick9"
+                        android:text="@string/q9_o3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q9r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick9"
+                        android:text="@string/q9_o4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/advent_pro_semibold"
+                    android:text="@string/question_10"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:text="@string/question_10_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/question_10_cont"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/q10rg10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/q10r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick10"
+                        android:text="@string/q10_o1"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q10r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick10"
+                        android:text="@string/q10_o2"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+
+                    <RadioButton
+                        android:id="@+id/q10r3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick10"
+                        android:text="@string/q10_o3"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/q10r4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/shape1"
+                        android:button="@null"
+                        android:fontFamily="@font/advent_pro_semibold"
+                        android:onClick="onFirstClick10"
+                        android:text="@string/q10_o4"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/shape"
+                android:fontFamily="@font/advent_pro_semibold"
+                android:onClick="results"
+                android:text="View Result"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
