@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="board_desc">Tic Tac Toe Board</string>
+    <string name="congrats">Here are your results:</string>
+    <string name="play_again">Play again?</string>
+</resources>

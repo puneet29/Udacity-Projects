@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:paddingTop="32dp"
+    tools:context="com.example.android.tictactoe.MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/board"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="casual"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/board" />
+
+    <ImageView
+        android:id="@+id/first"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignStart="@id/board"
+        android:layout_alignTop="@id/board"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:onClick="act"
+        android:tag="0" />
+
+    <ImageView
+        android:id="@+id/second"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignTop="@+id/first"
+        android:layout_centerHorizontal="true"
+        android:onClick="act"
+        android:tag="1" />
+
+    <ImageView
+        android:id="@+id/third"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignEnd="@id/board"
+        android:layout_alignTop="@+id/first"
+        android:layout_marginEnd="16dp"
+        android:onClick="act"
+        android:tag="2" />
+
+    <ImageView
+        android:id="@+id/fourth"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignStart="@id/first"
+        android:layout_centerVertical="true"
+        android:onClick="act"
+        android:tag="3" />
+
+    <ImageView
+        android:id="@+id/fifth"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="act"
+        android:tag="4" />
+
+    <ImageView
+        android:id="@+id/sixth"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignStart="@id/third"
+        android:layout_centerVertical="true"
+        android:onClick="act"
+        android:tag="5" />
+
+    <ImageView
+        android:id="@+id/seventh"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignBottom="@id/board"
+        android:layout_alignStart="@id/first"
+        android:layout_marginBottom="28dp"
+        android:onClick="act"
+        android:tag="6" />
+
+    <ImageView
+        android:id="@+id/eighth"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignBottom="@id/board"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:onClick="act"
+        android:tag="7" />
+
+    <ImageView
+        android:id="@+id/ninth"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignBottom="@id/board"
+        android:layout_alignStart="@id/third"
+        android:layout_marginBottom="28dp"
+        android:onClick="act"
+        android:tag="8" />
+
+    <LinearLayout
+        android:id="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|top"
+            android:background="@mipmap/cross"
+            android:onClick="crossButton" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:text="@string/congrats"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:fontFamily="casual" />
+
+        <TextView
+            android:id="@+id/winner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:fontFamily="casual" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorHeading" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="playAgain"
+            android:text="@string/play_again"
+            android:textColor="@color/colorButtonText"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
