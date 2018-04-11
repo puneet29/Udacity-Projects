@@ -2,10 +2,12 @@ package com.example.android.tictactoe;
 
 import android.content.res.Resources;
 import android.media.Image;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -48,11 +50,13 @@ public class MainActivity extends AppCompatActivity {
         gameState = true;
     }
 
-    private void animation(ImageView imageView, int res) {
-        imageView.setScaleY(0.75f);
-        imageView.setScaleX(0.75f);
+    private void animation(final ImageView imageView, int res) {
         imageView.setImageResource(res);
-        imageView.animate().scaleXBy(0.25f).scaleYBy(0.25f).rotationBy(360f).setDuration(100);
+        imageView.animate()
+                .scaleYBy(0.1f)
+                .scaleXBy(0.1f)
+                .rotationBy(360f)
+                .setDuration(100);
         stat[cell] = activePlayer;
     }
 

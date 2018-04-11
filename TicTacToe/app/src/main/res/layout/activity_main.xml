@@ -178,7 +178,7 @@
             android:onClick="playAgain"
             android:text="@string/play_again"
             android:textColor="@color/colorButtonText"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
